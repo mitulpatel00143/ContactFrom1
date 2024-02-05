@@ -1,0 +1,150 @@
+﻿.modal-header {
+    background: #e60000;
+    color: #FFF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.modal-title {
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.modal-content {
+    border-radius: 6px 6px 25px 25px;
+}
+
+.modal-body {
+    padding: 5px;
+}
+
+#MainForm .modal-dialog {
+    max-width: 475px !important;
+    margin: 80px auto;
+}
+
+#Mainform {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    margin: 70px auto;
+    padding-left: 150px;
+}
+
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 5px;
+    padding-right: 15px;
+    border-top: 0px solid #dee2e6;
+}
+
+.submitBtn {
+    margin: 0px;
+    padding: 3px 15px;
+    font-size: 12px;
+    background: #e60000;
+    color: #FFF;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    gap: 10px;
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px;
+}
+
+#ClosePopup {
+    margin: 0px;
+    padding: 3px 15px;
+    font-size: 12px;
+    background: #e60000;
+    color: #FFF;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    gap: 3px;
+    border: none;
+    outline: none;
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: 15px;
+}
+
+input::placeholder {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+.radioBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.radioButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.InputForm input {
+    width: 100%;
+    outline: none;
+    font-size: 12px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 0px 5px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    width: 100%;
+    outline: none;
+    border: 1px solid #dddddd;
+    resize: none;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+
+
+.shake {
+    animation: shake 0.2s;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+ 

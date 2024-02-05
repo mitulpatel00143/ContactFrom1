@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/style.css" rel="stylesheet" />
+<div class="modal fade" id="MainForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Fale Connosco</h5>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div style="padding: 5px 0px;">
+                        <p style="margin: 0px;display: flex; align-items: center; justify-content: center;font-size: 12px;font-weight: 500;color: grey;">Selecione o motivo do seu contacto</p>
+                    </div>
+                    <div class="radioBtns">
+                        <div class="radioButton">
+                            <input type="radio" id="radio1" name="radios" value="Reclamacao" checked>
+                            <label for="radio1" style="margin: 0;font-size: 12px;font-weight: 600;">Reclamação</label>
+                        </div>
+                        <div class="radioButton">
+                            <input type="radio" id="radio2" name="radios" value="Sugestao">
+                            <label for="radio2" style="margin: 0;font-size: 12px;font-weight: 600;">Sugestão</label>
+                        </div>
+                        <div class="radioButton">
+                            <input type="radio" id="radio3" name="radios" value="Elogio">
+                            <label for="radio3" style="margin: 0;font-size: 12px;font-weight: 600;">Elogio</label>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2%;" class="InputForm">
+                        <div>
+                            <input type="text" id="Name" placeholder="* Nome Completo">
+                        </div>
+                        <div>
+                            <input type="text" id="Number" placeholder="* Número de Cliente ( 11 Dígitos )">
+                        </div>
+                        <div>
+                            <input type="text" id="Email" placeholder="* Endereço de e-mail">
+                        </div>
+                        <div>
+                            <textarea name="Description" id="Description" cols="30" rows="10" placeholder="* Descrição"></textarea>
+                        </div>
+                    </div>
+                    <h6 style="margin: 0px;text-align: right;font-size: 10px;padding: 5px;">Campos de preenchimento obrigatório</h6>
+                    <div class="modal-footer">
+                        <button type="button" class="btn submitBtn" id="FormSubmit">
+                            <div>Submeter</div>
+                            <div class="fas fa-arrow-right" style="height: 10px;font-size: medium;"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- First Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <!-- Existing Modal Content -->
+</div>
+
+<!-- Second Modal -->
+<div class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="secondModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="secondModalLabel">Fale Connosco</h5>
+            </div>
+            <div class="modal-body">
+                <!-- Content for the second popup goes here -->
+                <p style="display: flex;align-items: center;justify-content: center;">Contacto Registado</p>
+                <div style="justify-content: space-around;flex-direction: column;">
+                    <p style="display: flex;align-items: center;justify-content: center;font-size: 12px;margin-bottom: 0px;">Agradecemos o seu contacto.</p>
+                    <p style="display: flex;align-items: center;justify-content: center;text-align:center;font-size: 12px;">Irá receber um e-mail na sua caixa de correio com a confirmação da sua comunicação.</p>
+                </div>
+                <div class="modal-footer" style="display: flex;align-items: center;justify-content: center;padding: 0px 5px;">
+                    <button type="button" class="btn btn-secondary" id="ClosePopup" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/validation.js"></script>
